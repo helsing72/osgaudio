@@ -1,4 +1,4 @@
-SET(LIB_NAME osgdb_osgAudio)
+SET(LIB_NAME osgdb_deprecated_osgaudio)
 #SET(HEADER_PATH "${osgAudio_SOURCE_DIR}/include/${LIB_NAME}")
 SET(OSGAUDIO_USER_DEFINED_DYNAMIC_OR_STATIC MODULE)
 
@@ -14,6 +14,7 @@ ADD_LIBRARY(
     IO_SoundState.cpp
     IO_SoundUpdateCB.cpp
 )
+SET_TARGET_PROPERTIES(${LIB_NAME} PROPERTIES PREFIX "")
 
 
 add_definitions( 

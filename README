@@ -1,3 +1,12 @@
+Example CMake flags:
+-DCMAKE_INSTALL_PREFIX=~/local
+-D0_ENABLE_SUBSYSTEM_FMOD:BOOL=OFF
+-D0_ENABLE_SUBSYSTEM_OPENAL:BOOL=ON
+-DOSGInstallType:STRING="Alternate Install Location"
+-DOSGInstallLocation:STRING=~/local/lib64
+-DFIND_LIBRARY_USE_LIB64_PATHS:BOOL=ON
+-D0_BUILD_EXAMPLES_OSGAUDIO:BOOL=OFF
+
 osgAudio
 osgAudio is an OpenSceneGraph nodekit that wraps OpenAL and FMOD to enable sound toolkits in OSG. The osgAudio library is the result of collaborative work between Ames Lab, ARDEC, Chris Hanson (Alpha Pixel, LLC), and Paul Martz (Skew Matrix Software LLC). It's used as part of the VE-Suite project. osgAudio is open source and available under the GNU LGPL v2.1 software license.
 
